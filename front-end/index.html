@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>EDU</title>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+	<link rel="stylesheet" href="base.css" type="text/css" />
+
+</head>
+<body>
+	<div id="page-wrapper">
+	  <h1 id="heading">Kontaktforma</h1>
+		<div id="errors"></div>
+		<form action="index.html" method="post">
+			<div class="row">
+				<label>Vārds, Uzvārds: <span class="required"></span> </label>
+				<input type="text" name="full_name" value="" id="full_name" />
+				<div class="clearfloat"></div>
+			</div>
+			<div class="row">
+				<label>Telefons numurs: <span class="required"></span> </label>
+				<input type="text" name="phone_number" value="" id="phone_number" />
+				<div class="clearfloat"></div>
+			</div>
+			<div class="row">
+				<label>Adrese:</label>
+				<input type="text" name="address" value="" id="address" />
+				<div class="clearfloat"></div>
+			</div>
+			<div class="row">
+				<label>Ziņojums: <span class="required"></span>  </label>
+				<textarea name="message" value="" id="message" ></textarea>
+				<div class="clearfloat"></div>
+			</div>
+			<div class="row">
+				<center>
+					<a class="large" href="javascript:;" onclick="validateForm() ? window.document.forms[0].submit() : false" id="submit">Sūtīt &rarr;</a>
+				</center>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="base.js"></script>
+</body>
+</html>
